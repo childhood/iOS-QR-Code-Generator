@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD0E755313DF49E300181C31 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0E755213DF49E300181C31 /* UIKit.framework */; };
+		CD0E755513DF49E300181C31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0E755413DF49E300181C31 /* Foundation.framework */; };
+		CD0E755713DF49E300181C31 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0E755613DF49E300181C31 /* CoreGraphics.framework */; };
+		CD0E755D13DF49E300181C31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD0E755B13DF49E300181C31 /* InfoPlist.strings */; };
+		CD0E756013DF49E300181C31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0E755F13DF49E300181C31 /* main.m */; };
+		CD0E756313DF49E300181C31 /* QRGenAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0E756213DF49E300181C31 /* QRGenAppDelegate.m */; };
+		CD0E756613DF49E300181C31 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD0E756413DF49E300181C31 /* MainWindow.xib */; };
+		CD0E756C13DF49E300181C31 /* QRGenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD0E756A13DF49E300181C31 /* QRGenViewController.xib */; };
+		CD0E757813DF4A7400181C31 /* qr_draw_png.mm in Sources */ = {isa = PBXBuildFile; fileRef = CD0E757313DF4A7400181C31 /* qr_draw_png.mm */; };
+		CD0E757913DF4A7400181C31 /* QR_Encode.mm in Sources */ = {isa = PBXBuildFile; fileRef = CD0E757613DF4A7400181C31 /* QR_Encode.mm */; };
+		CD0E75ED13DF4EAA00181C31 /* png.c in Sources */ = {isa = PBXBuildFile; fileRef = CD0E75D813DF4EAA00181C31 /* png.c */; };
+		CD0E75EE13DF4EAA00181C31 /* pngerror.c in Sources */ = {isa = PBXBuildFile; fileRef = CD0E75DC13DF4EAA00181C31 /* pngerror.c */; };
+		CD0E75EF13DF4EAA00181C31 /* pngget.c in Sources */ = {isa = PBXBuildFile; fileRef = CD0E75DD13DF4EAA00181C31 /* pngget.c */; };
+		CD0E75F013DF4EAA00181C31 /* pngmem.c in Sources */ = {isa = PBXBuildFile; fileRef = CD0E75DF13DF4EAA00181C31 /* pngmem.c */; };
+		CD0E75F113DF4EAA00181C31 /* pngpread.c in Sources */ = {isa = PBXBuildFile; fileRef = CD0E75E013DF4EAA00181C31 /* pngpread.c */; };
+		CD0E75F213DF4EAA00181C31 /* pngread.c in Sources */ = {isa = PBXBuildFile; fileRef = CD0E75E213DF4EAA00181C31 /* pngread.c */; };
+		CD0E75F313DF4EAA00181C31 /* pngrio.c in Sources */ = {isa = PBXBuildFile; fileRef = CD0E75E313DF4EAA00181C31 /* pngrio.c */; };
+		CD0E75F413DF4EAA00181C31 /* pngrtran.c in Sources */ = {isa = PBXBuildFile; fileRef = CD0E75E413DF4EAA00181C31 /* pngrtran.c */; };
+		CD0E75F513DF4EAA00181C31 /* pngrutil.c in Sources */ = {isa = PBXBuildFile; fileRef = CD0E75E513DF4EAA00181C31 /* pngrutil.c */; };
+		CD0E75F613DF4EAA00181C31 /* pngset.c in Sources */ = {isa = PBXBuildFile; fileRef = CD0E75E613DF4EAA00181C31 /* pngset.c */; };
+		CD0E75F713DF4EAA00181C31 /* pngtrans.c in Sources */ = {isa = PBXBuildFile; fileRef = CD0E75E813DF4EAA00181C31 /* pngtrans.c */; };
+		CD0E75F813DF4EAA00181C31 /* pngwio.c in Sources */ = {isa = PBXBuildFile; fileRef = CD0E75E913DF4EAA00181C31 /* pngwio.c */; };
+		CD0E75F913DF4EAA00181C31 /* pngwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = CD0E75EA13DF4EAA00181C31 /* pngwrite.c */; };
+		CD0E75FA13DF4EAA00181C31 /* pngwtran.c in Sources */ = {isa = PBXBuildFile; fileRef = CD0E75EB13DF4EAA00181C31 /* pngwtran.c */; };
+		CD0E75FB13DF4EAA00181C31 /* pngwutil.c in Sources */ = {isa = PBXBuildFile; fileRef = CD0E75EC13DF4EAA00181C31 /* pngwutil.c */; };
+		CD0E75FF13DF4F1100181C31 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0E75FE13DF4F1100181C31 /* libz.dylib */; };
+		CD0E762D13DF4FE600181C31 /* QRGenViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CD0E762C13DF4FE600181C31 /* QRGenViewController.mm */; };
+		CD0E763013DF501A00181C31 /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0E762F13DF501A00181C31 /* FileManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD0E754E13DF49E300181C31 /* QRGen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRGen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD0E755213DF49E300181C31 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CD0E755413DF49E300181C31 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD0E755613DF49E300181C31 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CD0E755A13DF49E300181C31 /* QRGen-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QRGen-Info.plist"; sourceTree = "<group>"; };
+		CD0E755C13DF49E300181C31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD0E755E13DF49E300181C31 /* QRGen-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QRGen-Prefix.pch"; sourceTree = "<group>"; };
+		CD0E755F13DF49E300181C31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD0E756113DF49E300181C31 /* QRGenAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRGenAppDelegate.h; sourceTree = "<group>"; };
+		CD0E756213DF49E300181C31 /* QRGenAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRGenAppDelegate.m; sourceTree = "<group>"; };
+		CD0E756513DF49E300181C31 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		CD0E756713DF49E300181C31 /* QRGenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRGenViewController.h; sourceTree = "<group>"; };
+		CD0E756B13DF49E300181C31 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/QRGenViewController.xib; sourceTree = "<group>"; };
+		CD0E757213DF4A7400181C31 /* qr_draw_png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qr_draw_png.h; sourceTree = "<group>"; };
+		CD0E757313DF4A7400181C31 /* qr_draw_png.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = qr_draw_png.mm; sourceTree = "<group>"; };
+		CD0E757413DF4A7400181C31 /* qr_draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qr_draw.h; sourceTree = "<group>"; };
+		CD0E757513DF4A7400181C31 /* QR_Encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QR_Encode.h; sourceTree = "<group>"; };
+		CD0E757613DF4A7400181C31 /* QR_Encode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QR_Encode.mm; sourceTree = "<group>"; };
+		CD0E757713DF4A7400181C31 /* win2ansi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = win2ansi.h; sourceTree = "<group>"; };
+		CD0E75D813DF4EAA00181C31 /* png.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = png.c; sourceTree = "<group>"; };
+		CD0E75D913DF4EAA00181C31 /* png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = png.h; sourceTree = "<group>"; };
+		CD0E75DA13DF4EAA00181C31 /* pngconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngconf.h; sourceTree = "<group>"; };
+		CD0E75DB13DF4EAA00181C31 /* pngdebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngdebug.h; sourceTree = "<group>"; };
+		CD0E75DC13DF4EAA00181C31 /* pngerror.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngerror.c; sourceTree = "<group>"; };
+		CD0E75DD13DF4EAA00181C31 /* pngget.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngget.c; sourceTree = "<group>"; };
+		CD0E75DE13DF4EAA00181C31 /* pnginfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pnginfo.h; sourceTree = "<group>"; };
+		CD0E75DF13DF4EAA00181C31 /* pngmem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngmem.c; sourceTree = "<group>"; };
+		CD0E75E013DF4EAA00181C31 /* pngpread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngpread.c; sourceTree = "<group>"; };
+		CD0E75E113DF4EAA00181C31 /* pngpriv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngpriv.h; sourceTree = "<group>"; };
+		CD0E75E213DF4EAA00181C31 /* pngread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngread.c; sourceTree = "<group>"; };
+		CD0E75E313DF4EAA00181C31 /* pngrio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngrio.c; sourceTree = "<group>"; };
+		CD0E75E413DF4EAA00181C31 /* pngrtran.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngrtran.c; sourceTree = "<group>"; };
+		CD0E75E513DF4EAA00181C31 /* pngrutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngrutil.c; sourceTree = "<group>"; };
+		CD0E75E613DF4EAA00181C31 /* pngset.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngset.c; sourceTree = "<group>"; };
+		CD0E75E713DF4EAA00181C31 /* pngstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngstruct.h; sourceTree = "<group>"; };
+		CD0E75E813DF4EAA00181C31 /* pngtrans.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngtrans.c; sourceTree = "<group>"; };
+		CD0E75E913DF4EAA00181C31 /* pngwio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwio.c; sourceTree = "<group>"; };
+		CD0E75EA13DF4EAA00181C31 /* pngwrite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwrite.c; sourceTree = "<group>"; };
+		CD0E75EB13DF4EAA00181C31 /* pngwtran.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwtran.c; sourceTree = "<group>"; };
+		CD0E75EC13DF4EAA00181C31 /* pngwutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwutil.c; sourceTree = "<group>"; };
+		CD0E75FC13DF4EC200181C31 /* pnglibconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pnglibconf.h; sourceTree = "<group>"; };
+		CD0E75FD13DF4EFB00181C31 /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
+		CD0E75FE13DF4F1100181C31 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		CD0E762C13DF4FE600181C31 /* QRGenViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QRGenViewController.mm; sourceTree = "<group>"; };
+		CD0E762E13DF501A00181C31 /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
+		CD0E762F13DF501A00181C31 /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD0E754B13DF49E300181C31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0E75FF13DF4F1100181C31 /* libz.dylib in Frameworks */,
+				CD0E755313DF49E300181C31 /* UIKit.framework in Frameworks */,
+				CD0E755513DF49E300181C31 /* Foundation.framework in Frameworks */,
+				CD0E755713DF49E300181C31 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD0E754313DF49E300181C31 = {
+			isa = PBXGroup;
+			children = (
+				CD0E755813DF49E300181C31 /* QRGen */,
+				CD0E755113DF49E300181C31 /* Frameworks */,
+				CD0E75FE13DF4F1100181C31 /* libz.dylib */,
+				CD0E754F13DF49E300181C31 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD0E754F13DF49E300181C31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD0E754E13DF49E300181C31 /* QRGen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD0E755113DF49E300181C31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD0E755213DF49E300181C31 /* UIKit.framework */,
+				CD0E755413DF49E300181C31 /* Foundation.framework */,
+				CD0E755613DF49E300181C31 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD0E755813DF49E300181C31 /* QRGen */ = {
+			isa = PBXGroup;
+			children = (
+				CD0E756113DF49E300181C31 /* QRGenAppDelegate.h */,
+				CD0E756213DF49E300181C31 /* QRGenAppDelegate.m */,
+				CD0E756713DF49E300181C31 /* QRGenViewController.h */,
+				CD0E762C13DF4FE600181C31 /* QRGenViewController.mm */,
+				CD0E762E13DF501A00181C31 /* FileManager.h */,
+				CD0E762F13DF501A00181C31 /* FileManager.m */,
+				CD0E756413DF49E300181C31 /* MainWindow.xib */,
+				CD0E756A13DF49E300181C31 /* QRGenViewController.xib */,
+				CD0E755913DF49E300181C31 /* Supporting Files */,
+			);
+			path = QRGen;
+			sourceTree = "<group>";
+		};
+		CD0E755913DF49E300181C31 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD0E763113DF50CB00181C31 /* QRDraw */,
+				CD0E75D713DF4EAA00181C31 /* libpng */,
+				CD0E755A13DF49E300181C31 /* QRGen-Info.plist */,
+				CD0E755B13DF49E300181C31 /* InfoPlist.strings */,
+				CD0E755E13DF49E300181C31 /* QRGen-Prefix.pch */,
+				CD0E755F13DF49E300181C31 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD0E75D713DF4EAA00181C31 /* libpng */ = {
+			isa = PBXGroup;
+			children = (
+				CD0E75FD13DF4EFB00181C31 /* zlib.h */,
+				CD0E75FC13DF4EC200181C31 /* pnglibconf.h */,
+				CD0E75D813DF4EAA00181C31 /* png.c */,
+				CD0E75D913DF4EAA00181C31 /* png.h */,
+				CD0E75DA13DF4EAA00181C31 /* pngconf.h */,
+				CD0E75DB13DF4EAA00181C31 /* pngdebug.h */,
+				CD0E75DC13DF4EAA00181C31 /* pngerror.c */,
+				CD0E75DD13DF4EAA00181C31 /* pngget.c */,
+				CD0E75DE13DF4EAA00181C31 /* pnginfo.h */,
+				CD0E75DF13DF4EAA00181C31 /* pngmem.c */,
+				CD0E75E013DF4EAA00181C31 /* pngpread.c */,
+				CD0E75E113DF4EAA00181C31 /* pngpriv.h */,
+				CD0E75E213DF4EAA00181C31 /* pngread.c */,
+				CD0E75E313DF4EAA00181C31 /* pngrio.c */,
+				CD0E75E413DF4EAA00181C31 /* pngrtran.c */,
+				CD0E75E513DF4EAA00181C31 /* pngrutil.c */,
+				CD0E75E613DF4EAA00181C31 /* pngset.c */,
+				CD0E75E713DF4EAA00181C31 /* pngstruct.h */,
+				CD0E75E813DF4EAA00181C31 /* pngtrans.c */,
+				CD0E75E913DF4EAA00181C31 /* pngwio.c */,
+				CD0E75EA13DF4EAA00181C31 /* pngwrite.c */,
+				CD0E75EB13DF4EAA00181C31 /* pngwtran.c */,
+				CD0E75EC13DF4EAA00181C31 /* pngwutil.c */,
+			);
+			path = libpng;
+			sourceTree = "<group>";
+		};
+		CD0E763113DF50CB00181C31 /* QRDraw */ = {
+			isa = PBXGroup;
+			children = (
+				CD0E757213DF4A7400181C31 /* qr_draw_png.h */,
+				CD0E757313DF4A7400181C31 /* qr_draw_png.mm */,
+				CD0E757413DF4A7400181C31 /* qr_draw.h */,
+				CD0E757513DF4A7400181C31 /* QR_Encode.h */,
+				CD0E757613DF4A7400181C31 /* QR_Encode.mm */,
+				CD0E757713DF4A7400181C31 /* win2ansi.h */,
+			);
+			name = QRDraw;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD0E754D13DF49E300181C31 /* QRGen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD0E756F13DF49E300181C31 /* Build configuration list for PBXNativeTarget "QRGen" */;
+			buildPhases = (
+				CD0E754A13DF49E300181C31 /* Sources */,
+				CD0E754B13DF49E300181C31 /* Frameworks */,
+				CD0E754C13DF49E300181C31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QRGen;
+			productName = QRGen;
+			productReference = CD0E754E13DF49E300181C31 /* QRGen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD0E754513DF49E300181C31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Kuapay LLC.";
+			};
+			buildConfigurationList = CD0E754813DF49E300181C31 /* Build configuration list for PBXProject "QRGen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD0E754313DF49E300181C31;
+			productRefGroup = CD0E754F13DF49E300181C31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD0E754D13DF49E300181C31 /* QRGen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD0E754C13DF49E300181C31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0E755D13DF49E300181C31 /* InfoPlist.strings in Resources */,
+				CD0E756613DF49E300181C31 /* MainWindow.xib in Resources */,
+				CD0E756C13DF49E300181C31 /* QRGenViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD0E754A13DF49E300181C31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0E756013DF49E300181C31 /* main.m in Sources */,
+				CD0E756313DF49E300181C31 /* QRGenAppDelegate.m in Sources */,
+				CD0E757813DF4A7400181C31 /* qr_draw_png.mm in Sources */,
+				CD0E757913DF4A7400181C31 /* QR_Encode.mm in Sources */,
+				CD0E75ED13DF4EAA00181C31 /* png.c in Sources */,
+				CD0E75EE13DF4EAA00181C31 /* pngerror.c in Sources */,
+				CD0E75EF13DF4EAA00181C31 /* pngget.c in Sources */,
+				CD0E75F013DF4EAA00181C31 /* pngmem.c in Sources */,
+				CD0E75F113DF4EAA00181C31 /* pngpread.c in Sources */,
+				CD0E75F213DF4EAA00181C31 /* pngread.c in Sources */,
+				CD0E75F313DF4EAA00181C31 /* pngrio.c in Sources */,
+				CD0E75F413DF4EAA00181C31 /* pngrtran.c in Sources */,
+				CD0E75F513DF4EAA00181C31 /* pngrutil.c in Sources */,
+				CD0E75F613DF4EAA00181C31 /* pngset.c in Sources */,
+				CD0E75F713DF4EAA00181C31 /* pngtrans.c in Sources */,
+				CD0E75F813DF4EAA00181C31 /* pngwio.c in Sources */,
+				CD0E75F913DF4EAA00181C31 /* pngwrite.c in Sources */,
+				CD0E75FA13DF4EAA00181C31 /* pngwtran.c in Sources */,
+				CD0E75FB13DF4EAA00181C31 /* pngwutil.c in Sources */,
+				CD0E762D13DF4FE600181C31 /* QRGenViewController.mm in Sources */,
+				CD0E763013DF501A00181C31 /* FileManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD0E755B13DF49E300181C31 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD0E755C13DF49E300181C31 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CD0E756413DF49E300181C31 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD0E756513DF49E300181C31 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		CD0E756A13DF49E300181C31 /* QRGenViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD0E756B13DF49E300181C31 /* en */,
+			);
+			name = QRGenViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD0E756D13DF49E300181C31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD0E756E13DF49E300181C31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		CD0E757013DF49E300181C31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QRGen/QRGen-Prefix.pch";
+				HEADER_SEARCH_PATHS = ./QRGen/libpng;
+				INFOPLIST_FILE = "QRGen/QRGen-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CD0E757113DF49E300181C31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QRGen/QRGen-Prefix.pch";
+				HEADER_SEARCH_PATHS = ./QRGen/libpng;
+				INFOPLIST_FILE = "QRGen/QRGen-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD0E754813DF49E300181C31 /* Build configuration list for PBXProject "QRGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD0E756D13DF49E300181C31 /* Debug */,
+				CD0E756E13DF49E300181C31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD0E756F13DF49E300181C31 /* Build configuration list for PBXNativeTarget "QRGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD0E757013DF49E300181C31 /* Debug */,
+				CD0E757113DF49E300181C31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD0E754513DF49E300181C31 /* Project object */;
+}
